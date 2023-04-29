@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo1.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Full stack Engineer</p>
+            <h1>Hi, I'm <span>Saksham</span><br></h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user1.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a passionate creator who believes in the power of design and innovation to change the world. With a background in technology, and especially data science, I am constantly seeking new ways to push the boundaries of what is possible, and to create beautiful, functional, and meaningful experiences for people.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Coding Languages</span><br>I have expertise in various programming languages including Python, JavaScript, HTML/CSS, and SQL</li>
+                        <li><span>Project Management</span><br>Experienced in overseeing and coordinating projects from inception to completion, ensuring delivery on time and within budget.</li>
+                        <li><span>Data Analysis</span><br>I excel at collecting, organizing, and analyzing complex datasets to identify patterns and trends. With a strong foundation in statistical analysis and experience in data visualization tools, I am able to provide valuable insights and recommendations to inform business decisions.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023 - Current</span><br>Software Engineer Intern at Unadat</li>
+                        <li><span>2021 - 2023</span><br>Mathematics Tutor at CUNY Tutor Corps.</li>
+                        <li><span>2021</span><br>Summer Digital Intern at Philly Startup Sprint.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020-2024</span><br>B.S. Computer Science & Information Security at John Jay College of Criminal Justice (CUNY)</li>
+                        <li><span>2021</span><br>Ever Up Micro-Credential Program (CUNY): Data Analytics Certification.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Accomplishments: </h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Software Engineer Internship</h2>
+                <p>Experienced Unadat professional with a passion for using data-driven insights to drive business growth and improve operational efficiency..</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>CUNY Tutor Corps</h2>
+                <p>I gained valuable experience at CUNY Tutor Corps, where I worked with students from diverse backgrounds and helped them improve their academic skills.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Philly Startup Sprint</h2>
+                <p>I gained valuable experience at Philly Startup Sprint, where I collaborated with a diverse team to develop innovative solutions for startups. </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-11.png">
+                <div class="layer">
+                    <h3>Diabetes Hospital Readmission Analysis</h3>
+                    <p>Conducted an analysis to predict whether a patient is likely to be a readmit to the hospital within 30 days. The project analyses the causes of diabetes.</p>
+                    <a href="https://github.com/saksham657/Summer-Microcredential/blob/02b89790d55831c62969a7f5082fea6fef0f21af/Diabetes_analysis_mini_project.ipynb"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-22.png">
+                <div class="layer">
+                    <h3>10-year risk offuturecoronary heart disease </h3>
+                    <p>The classification goal of this project was to predict whetherthe patient has a 10-year risk offuture coronary heart disease (CHD).</p>
+                    <a href="https://github.com/saksham657/Summer-Microcredential/blob/02b89790d55831c62969a7f5082fea6fef0f21af/Final_Project_of_Heart_Attack_Dataset.ipynb"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-33.png">
+                <div class="layer">
+                    <h3>Food Truck Regression Analysis</h3>
+                    <p>This analysis is to predict the projected profit of a foodtruck company on a specified population area.</p>
+                    <a href="https://github.com/saksham657/Summer-Microcredential/blob/e22045d1a98fd9c6908153a4aa4dbfe8dcdfb388/Food_Truck_Regression_Analysis.ipynb"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> saksham657@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> (917) 443-2048</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/saksham.sharma.58511276/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/Saksham_217"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/saksham_217/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/saksham-sharma-150b591a9/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="https://jjaycuny-my.sharepoint.com/:b:/g/personal/saksham_sharma_jjay_cuny_edu/ESRX_T3C5i1EqNLmpBkjK6UBMBG8T9ysT9fUlXmjcpkYFg?e=3pJXYa" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '< add you own link here >' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
